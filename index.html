@@ -1,8 +1,194 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Alan's Page</title>
+   <link href="styles.css" rel="stylesheet" type="text/css" />
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito+Sans:wght@400;600;800&family=Permanent+Marker&display=swap');
+   </style>
+   <script>
+      window.addEventListener("load", function (event) {
+         let summaries = document.querySelectorAll("summary");
+         summaries.forEach(function (summary) {
+            summary.addEventListener("click", function (event) {
+               let mtnName = summary.querySelector("h3");
+               let temp = mtnName.innerHTML
+               if (temp.slice(0, 1) === "▸") {
+                  temp = "&#9662;" + temp.slice(1, temp.length);
+               } else if (temp.slice(0, 1) === "▾") {
+                  temp = "&#9656;" + temp.slice(1, temp.length);
+               }
+               mtnName.innerHTML = temp;
+            });
+         });
+      });
+   </script>
+</head>
+
+<body>
+   <!--<p>, <header>, <footer>, <main>, <article>-->
+   <header>
+      <img id="headerImg" src="./graphics/snowboard-jump transparent.png" alt="snowboarder">
+      <h1 id="mainHeading">Snowboarding</h1>
+      <h1 id="submain">from on-my-butt to knee-deep</h1>
+      <p id="testP" class="funParagraph">Alan Miller</p>
+   </header>
+   <main>
+      <div class="flex-container1">
+         <article id="art1" class="flex-container2">
+            <h2 class="section-head">Get Up &amp; Go: <br>Runnin Up That Hill</h2>
+            <p class="blurb">No matter the size, the cheapest and closest spot is the best place to get started! (not
+               pictured: the hill of my neighbor's front lawn)</p>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/blue-hills_trailmap.jpg" alt="trailmap blue hills">
+                     <h3 class="image-text-txt">&#9656;Blue Hills</h3>
+                  </summary>
+                  <p>Canton, MA</p>
+                  <p>Elevation: 635ft</p>
+                  <p>Vertical Drop: 309ft</p>
+                  <p>Skiable: 60 acres</p>
+                  <!-- <p>Trails: 8</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/wachusett-painted-james_niehues-cropped.jpg"
+                        alt="Wachusett Mountain painted by James Niehues"></a>
+                     <h3 class="image-text-txt">&#9656;Wachusett</h3>
+                  </summary>
+                  <p>Princeton, MA</p>
+                  <p>Elevation: 2,006ft</p>
+                  <p>Vertical Drop: 1,000ft</p>
+                  <p>Skiable: 110 acres</p>
+                  <!-- <p>Trails: 26</p> -->
+               </details>
+            </div>
+         </article>
+         <article id="art2" class="flex-container2">
+            <h2 class="section-head">Getting Better: <br>Driving Further</h2>
+            <p class="blurb">The better you get, the faster you hit top to bottom, the more mountain you want. Day trips
+               to New Hampshire and Vermont taught me to love new terrain with thicker woods and deeper snow. The
+               tickets weren't cheap but the ice was always free, god bless 'em.</p>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/ragged-2022 Landscape - Drone.jpg"
+                        alt="Ragged Mountain landscape from drone">
+                     <h3 class="image-text-txt">&#9656;Ragged</h3>
+                  </summary>
+                  <p>Danbury, NH</p>
+                  <p>Elevation: 2,225ft </p>
+                  <p>Vertical Drop: 1,250ft</p>
+                  <p>Skiable: 250 acres</p>
+                  <!-- <p>Trails: 57</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/sunday-river-painted-james_niehues-cropped.jpg"
+                        alt="Sunday River painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Sunday River</h3>
+                  </summary>
+                  <p>Newry, ME</p>
+                  <p>Elevation: 3140'</p>
+                  <p>Vertical Drop: 2340' max, 1500' typical</p>
+                  <p>Skiable: 870 acres</p>
+                  <!-- <p>Trails: 135</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/killington-painted-james_niehues.jpg"
+                        alt="Killington painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Killington</h3>
+                  </summary>
+                  <p>Killington, VT</p>
+                  <p>Elevation: 4241'</p>
+                  <p>Vertical Drop: 3050'</p>
+                  <p>Skiable: 1509 acres</p>
+                  <!-- <p>Trails: 155</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/sugarbush-painted-james_niehues-cropped.jpg"
+                        alt="Sugarbush painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Sugarbush</h3>
+                  </summary>
+                  <p>Warren, VT</p>
+                  <p>Elevation: 4083'</p>
+                  <p>Vertical Drop: 2600'</p>
+                  <p>Skiable: 484 acres</p>
+                  <!-- <p>Trails: 111</p> -->
+               </details>
+            </div>
+         </article>
+         <article id="art3" class="flex-container2">
+            <h2 class="section-head">Going West: <br>Diving Deeper</h2>
+            <p class="blurb">
+               The Western US is another league entirely. Huge mountains catch heavy clouds to dump the light, airy snow
+               they're know for in heaps. That takes a deep powder day from slogging in the East to surfing in the West.
+               Find me floating through the endless glades, bowls, and basins of these behemoths and we'll have a time
+               you won't soon forget.
+            </p>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/steamboat-painted-james_niehues.jpg"
+                        alt="Steamboat painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Steamboat</h3>
+                  </summary>
+                  <p>Steamboat Springs, CO</p>
+                  <p>Elevation: 10568' </p>
+                  <p>Vertical Drop: 3668' </p>
+                  <p>Skiable: 2965 acres</p>
+                  <!-- <p>Trails: 165</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" src="./graphics/arapahoe-basin-painted-james_niehues.jpg"
+                        alt="Arapahoe Basin painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Arapahoe Basin</h3>
+                  </summary>
+                  <p>White River National Forest, CO </p>
+                  <p>Elevation: 13050' (3rd in NA) </p>
+                  <p>Vertical Drop: 2530'</p>
+                  <p>Skiable: 1428 acres</p>
+                  <!-- <p>Trails: 145</p> -->
+               </details>
+            </div>
+            <div class="mountain">
+               <details>
+                  <summary class="image-text-container">
+                     <img class="image-text-img" id="heavenly"
+                        src="./graphics/heavenly_painted-james_niehues-cropped.jpg"
+                        alt="Heavenly painted by James Niehues">
+                     <h3 class="image-text-txt">&#9656;Heavenly</h3>
+                  </summary>
+                  <p>South Lake Tahoe, CA/NV </p>
+                  <p>Elevation: 10067'</p>
+                  <p>Vertical Drop: 3500'</p>
+                  <p>Skiable: 4800 acres</p>
+                  <!-- <p>Trails: 97</p> -->
+               </details>
+            </div>
+         </article>
+      </div>
+   </main>
+   <footer>
+      <p id="copyright">&copy; 2022 al.mill</p>
+   </footer>
+</body>
+
 </html>

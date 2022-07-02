@@ -207,6 +207,7 @@ h3 {
 }
 
 .section-head {
+    padding: 10px 0 0 0;
     text-decoration: underline;
     text-underline-offset: 1px;
     font-size: 36px;
@@ -265,10 +266,10 @@ article {
 }
 
 img {
-    border-radius: 20px;
-    /* margin-top: 20px; */
-    /* float: right; */
+    border-radius: 10px;
     width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 img:hover {
@@ -276,18 +277,18 @@ img:hover {
 }
 
 .image-text-container {
-    display: block;
     position: relative;
     text-align: center;
-    margin: 0 10% 0 10%;
-    padding: 10px;
+    margin: 0 10% 0% 10%;
+    padding: 0;
 }
 
-.image-text-img {
+/* .image-text-img {
     position: relative;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+} */
+
+.image-text-img {
+    height: 50vmin;
 }
 
 .image-text-txt {
@@ -310,6 +311,7 @@ img:hover {
 
 details {
     text-align: center;
+    height: fit-content;
 }
 
 details :marker {
@@ -324,24 +326,40 @@ summary {
 .mountain {
     width: 100%;
     align-items: stretch;
-    justify-content: center;
+    justify-content: stretch;
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
 }
 
 .blurb {
+    position: relative;
+    align-items: stretch;
+    justify-content: center;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    padding: 10px 50px 20px 50px;
+    margin: 40px 10% 40px 10%;
+    padding: 10px;
     text-shadow: none;
-    color: black;
-    opacity: 90%;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(250, 235, 215, 0.25); /*antique white*/
+    border-radius: 4px;
 }
 
-#copyright {
+footer{
+    margin: 40px 0;
+}
+
+#credit {
+    text-align: center;
+    color: tan;
+    opacity: 60%;
+    margin: 20px;
+}
+
+#copyright{
     text-align: center;
     color: orchid;
-    margin: 60px;
+    margin: 20px;
 }
 
 @media (max-width: 1000px) {

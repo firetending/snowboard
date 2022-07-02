@@ -154,15 +154,11 @@ body {
     width: min(60%, 400px);
     position: absolute;
     right: 8px;
+    box-shadow: none;
 }
 
 #headerImg:hover {
     transform: scale(1.5);
-}
-
-#mainHeading,
-.funParagraph {
-    opacity: 70%;
 }
 
 h1 {
@@ -172,10 +168,19 @@ h1 {
     width: 60%;
 }
 
+#mainHeadingDisplayed {
+    color: rgb(45, 182, 182);
+    text-shadow: 2px 2px 75px antiquewhite;
+    padding: 5vmin 0 3vmin 0;
+    opacity: 70%;
+}
+
 #mainHeading {
     color: red;
     text-shadow: 1px 1px 3px tan;
     padding: 5vmin 0 3vmin 0;
+    opacity: 70%;
+    display: none;
 }
 
 #submain {
@@ -186,6 +191,17 @@ h1 {
     position: relative;
 }
 
+.funParagraphDisplayed {
+    padding: 3vmin 0 6vmin 0;
+    /* color: rgb(11, 82, 11); */
+    color: rgb(2, 109, 2);
+    text-shadow: 1px 1px 2px tan;
+    font-size: 6vmin;
+    font-family: 'Permanent Marker', cursive;
+    text-align: right;
+    opacity: 70%;
+}
+
 .funParagraph {
     padding: 3vmin 0 6vmin 0;
     color: green;
@@ -193,6 +209,8 @@ h1 {
     font-size: 6vmin;
     font-family: 'Permanent Marker', cursive;
     text-align: right;
+    opacity: 70%;
+    display: none;
 }
 
 /* .funParagraph:hover {
@@ -265,11 +283,38 @@ article {
 
 }
 
+.mountain {
+    width: 100%;
+    align-items: stretch;
+    justify-content: stretch;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+.blurb {
+    position: relative;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin: 40px 10% 40px 10%;
+    padding: 10px;
+    text-shadow: none;
+    color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 6px 6px 10px black; */
+    /* text-shadow: 0.1px 0.1px 70px antiquewhite; */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: rgba(250, 235, 215, 0.25);
+    /*antique white plus opacity*/
+    border-radius: 4px;
+}
+
 img {
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 0;
+    box-shadow: 6px 6px 14px black;
 }
 
 img:hover {
@@ -307,6 +352,7 @@ img:hover {
     font-size: min(5vmin, 30px);
     background-color: white;
     border-radius: 30px;
+    box-shadow: 2px 2px 4px black;
 }
 
 details {
@@ -323,29 +369,7 @@ summary {
     list-style: none;
 }
 
-.mountain {
-    width: 100%;
-    align-items: stretch;
-    justify-content: stretch;
-    text-align: center;
-    padding: 0 0 10px 0;
-}
-
-.blurb {
-    position: relative;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    margin: 40px 10% 40px 10%;
-    padding: 10px;
-    text-shadow: none;
-    color: rgba(0, 0, 0, 0.8);
-    background-color: rgba(250, 235, 215, 0.25); /*antique white*/
-    border-radius: 4px;
-}
-
-footer{
+footer {
     margin: 40px 0;
 }
 
@@ -356,7 +380,7 @@ footer{
     margin: 20px;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     color: orchid;
     margin: 20px;

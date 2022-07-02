@@ -1,1 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} */
+
+
+/* START ACTUAL CSS */
 /* Write your CSS here! */
+body {
+    margin: 8px;
+    padding: 0;
+    border: 0;
+    display: block;
+    color: tan;
+    /* background-color: darkolivegreen; */
+    background-color: black;
+    background-repeat: no-repeat;
+    font-family: 'Baloo 2', cursive;
+}
+
+#headerImg {
+    /* background-color: black; */
+    width: min(60%, 400px);
+    position: absolute;
+    right: 8px;
+}
+
+#headerImg:hover {
+    transform: scale(1.5);
+}
+
+#mainHeading,
+.funParagraph {
+    opacity: 70%;
+}
+
+h1 {
+    font-size: 10vmin;
+    line-height: 0.5;
+    padding: 5vmin 0 3vmin 0;
+    width: 60%;
+}
+
+#mainHeading {
+    color: rgba(255, 0, 0);
+    text-shadow: 1px 1px 3px tan;
+    padding: 5vmin 0 3vmin 0;
+}
+
+#submain {
+    line-height: 1;
+    font-size: 6vmin;
+    font-style: italic;
+    padding: 3vmin 0 3vmin 0;
+    position: relative;
+}
+
+.funParagraph {
+    padding: 3vmin 0 6vmin 0;
+    color: green;
+    text-shadow: 1px 1px 3px tan;
+    font-size: 6vmin;
+    font-family: 'Permanent Marker', cursive;
+    text-align: right;
+}
+
+/* .funParagraph:hover {
+    color: tan;
+    text-shadow: 1px 1px 3px black;
+} */
+
+h2,
+h3 {
+    padding: 14px 0px 14px 0px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.section-head {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    line-height: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-shadow: 0.5px 0.5px 2px black;
+    padding: 4px 0px 4px 0px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex-basis: 100px; */
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* justify-content: center; */
+}
+
+article {
+    /* flex-basis: 300px; */
+    padding: 40px 0px 40px 0px;
+    /* border: 2px solid gray; */
+    /* border-radius: 30px; */
+    width: 100%;
+    min-height: 500px;
+}
+
+#art1 {
+    background-color: rgb(128, 61, 61);
+}
+
+#art2 {
+    background-color: rgb(102, 99, 50);
+}
+
+#art3 {
+    background-color: darkslategrey;
+
+}
+
+img {
+    border-radius: 20px;
+    /* margin-top: 20px; */
+    /* float: right; */
+    width: 100%;
+}
+
+img:hover {
+    transform: scale(1.0175);
+}
+
+.image-text-container {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0 10% 0 10%;
+    padding: 10px;
+}
+
+.image-text-img {
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.image-text-txt {
+    position: absolute;
+    top: 9.5vmin;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 10px 24px 10px 10px;
+    width: max-content;
+    /*  */
+    line-height: 1;
+    color: black;
+    opacity: 80%;
+    text-shadow: 0.75px 0.75px 2px white;
+    font-size: min(5vmin, 30px);
+    background-color: white;
+    border-radius: 30px;
+}
+
+details {
+    text-align: center;
+}
+
+details :marker {
+    display: none;
+}
+
+summary {
+    text-align: center;
+    list-style: none;
+}
+
+.mountain {
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.blurb {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px 50px 20px 50px;
+    text-shadow: none;
+    color: black;
+    opacity: 90%;
+}
+
+#copyright {
+    text-align: center;
+    color: orchid;
+    margin: 60px;
+}
+
+@media (max-width: 1000px) {
+    .flex-container1 {
+        flex-direction: column;
+    }
+
+}

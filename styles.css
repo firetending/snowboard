@@ -173,7 +173,7 @@ h1 {
 }
 
 #mainHeading {
-    color: rgba(255, 0, 0);
+    color: red;
     text-shadow: 1px 1px 3px tan;
     padding: 5vmin 0 3vmin 0;
 }

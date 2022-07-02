@@ -269,7 +269,7 @@ img {
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 0;
 }
 
 img:hover {

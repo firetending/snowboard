@@ -355,6 +355,13 @@ img:hover {
     box-shadow: 2px 2px 4px black;
 }
 
+#bluehills {
+    background-image: url('./graphics/blue-hills_trailmap.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 details {
     text-align: center;
     height: fit-content;
@@ -367,6 +374,10 @@ details :marker {
 summary {
     text-align: center;
     list-style: none;
+}
+
+.details-text {
+    position: absolute;
 }
 
 footer {

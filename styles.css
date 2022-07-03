@@ -137,6 +137,13 @@ table {
 
 /* START ACTUAL CSS */
 /* Write your CSS here! */
+:root {
+    --art1Color: rgb(128, 61, 61);
+    --art1Color-opacity: rgb(128, 61, 61, .6);
+    --art2Color: rgb(102, 99, 50);
+    --art3Color: darkslategrey;
+}
+
 body {
     margin: 8px;
     padding: 0;
@@ -307,6 +314,7 @@ article {
     background-color: rgba(250, 235, 215, 0.25);
     /*antique white plus opacity*/
     border-radius: 4px;
+    min-height: 160px;
 }
 
 img {
@@ -328,9 +336,12 @@ img:hover {
     padding: 0;
 }
 
-/* .image-text-img {
+.summary-details-container {
     position: relative;
-} */
+    text-align: center;
+    margin: 0 10% 0% 10%;
+    padding: 0;
+}
 
 .image-text-img {
     height: 50vmin;
@@ -341,6 +352,7 @@ img:hover {
     top: 9.5vmin;
     left: 50%;
     transform: translate(-50%, -50%);
+    /**/
     margin: 0px;
     padding: 10px 10px 10px 10px;
     width: max-content;
@@ -355,29 +367,21 @@ img:hover {
     box-shadow: 2px 2px 4px black;
 }
 
-#bluehills {
-    background-image: url('./graphics/blue-hills_trailmap.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-details {
-    text-align: center;
-    height: fit-content;
-}
-
-details :marker {
-    display: none;
-}
-
-summary {
-    text-align: center;
-    list-style: none;
-}
-
 .details-text {
     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* */
+    margin: 0px;
+    padding: 4px;
+    width: max-content;
+    visibility: hidden;
+    /* */
+    font-size: min(2vmin, 14px);
+    background-color: rgba(0, 0, 0, 0.52);
+    text-shadow: 4px 4px 4px black;
+    border: 2px solid tan;
 }
 
 footer {

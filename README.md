@@ -1,6 +1,6 @@
-# snowboard
+# snowboarding mini-memoir
 original html/css page coded for LC101 assignment
 
-## view:
+## View page
 https://firetending.github.io/snowboard/
 
